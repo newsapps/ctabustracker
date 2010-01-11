@@ -7,6 +7,12 @@ Chicago Tribune.  To see more of our work, visit:
 
   http://apps.chicagotribune.com/
   
+
+REQUIREMENTS
+
+Python >= 2.6
+BeautifulSoup
+  
   
 INSTALL
 
