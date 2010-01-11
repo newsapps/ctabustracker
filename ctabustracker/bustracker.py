@@ -276,7 +276,7 @@ class CTABusTracker(object):
                 'longitude': str(pt.lon.string)
                 }
                 
-            if pt.type == 'S':
+            if str(pt.typ.string) == 'S':
                 pattern['path'][str(pt.seq.string)]['stop_id'] = str(pt.stpid.string)
                 pattern['path'][str(pt.seq.string)]['stop_name'] = str(pt.stpnm.string)
             else:
@@ -315,7 +315,7 @@ class CTABusTracker(object):
                     'longitude': str(pt.lon.string)
                     }
                     
-                if pt.type == 'S':
+                if str(pt.typ.string) == 'S':
                     patterns[str(tag.pid.string)]['path'][str(pt.seq.string)]['stop_id'] = str(pt.stpid.string)
                     patterns[str(tag.pid.string)]['path'][str(pt.seq.string)]['stop_name'] = str(pt.stpnm.string)
                 else:
