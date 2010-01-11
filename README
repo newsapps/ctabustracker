@@ -1,12 +1,38 @@
+DESCRIPTION
+
 A python wrapper for the Chicago Transit Authority's Bustracker API.
-
-To install, simply run:
-
-  python setup.py install
 
 This software was developed by the News Applications Development Team at the
 Chicago Tribune.  To see more of our work, visit:
 
   http://apps.chicagotribune.com/
+  
+  
+INSTALL
+
+To install this module, simply run:
+
+  python setup.py install
+  
+  
+USAGE
+
+Use of this module requires a Bustracker API key.  Get yours and learn more
+about the API at the CTA's Developer Center:
+
+  http://www.transitchicago.com/developers/default.aspx
+  
+Once installed you should be able to execute the following commands in the
+Python interpreter
+
+>>> from ctabustracker import CTABusTracker
+>>> cbt = CTABusTracker('YOUR API KEY GOES HERE')
+>>> cbt.get_routes()
+
+A dictionary structure describing all currently available routes will be
+printed.
+
+  
+LICENSING
 
 This software is licensed under the MIT license.  For details see COPYING.
