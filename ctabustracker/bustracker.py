@@ -474,4 +474,4 @@ if __name__ == "__main__":
     print 'Route %s includes %i patterns.' % (TEST_ROUTE, len(patterns))
     
     predictions = cbt.get_route_predictions(TEST_ROUTE)
-    print 'Route %s has %i ETD/ETA predictions .' % (TEST_ROUTE, len(predictions))
+    print 'Route %s has %i ETD/ETA predictions.' % (TEST_ROUTE, len(predictions))
