@@ -134,7 +134,7 @@ class CTABusTracker(object):
             'distance_into_route': float(tag.pdist.string)
             }
 
-        if hasattr(tag.dly, 'string') and tag.dly.string == 'true':
+        if tag.find('dly') and tag.dly.string == 'true':
             vehicle['delayed'] = True
         else:
             vehicle['delayed'] = False
@@ -168,7 +168,7 @@ class CTABusTracker(object):
                 'distance_into_route': float(tag.pdist.string)
                 }
 
-            if hasattr(tag.dly, 'string') and tag.dly.string == 'true':
+            if tag.find('dly') and tag.dly.string == 'true':
                 vehicles[str(tag.vid.string)]['delayed'] = True
             else:
                 vehicles[str(tag.vid.string)]['delayed'] = False
@@ -377,7 +377,7 @@ class CTABusTracker(object):
                 'prediction': datetime.strptime(tag.prdtm.string, '%Y%m%d %H:%M'),
                 }
             
-            if hasattr(p.dly, 'string') and p.dly.string == 'true':
+            if tag.find('dly') and tag.dly.string == 'true':
                 p['delay'] = True
             else:
                 p['delay'] = False
