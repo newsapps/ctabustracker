@@ -10,9 +10,9 @@ Chicago Tribune.  To see more of our work, visit:
   
 INSTALL
 
-To install this module, simply run:
+This module use setuptools. To install run:
 
-  python setup.py install
+$ python setup.py install
   
   
 USAGE
@@ -22,8 +22,8 @@ about the API at the CTA's Developer Center:
 
   http://www.transitchicago.com/developers/default.aspx
   
-Once installed you should be able to execute the following commands in the
-Python interpreter
+Once you have acquired and API key, you should be able to execute the
+following commands in the Python interpreter:
 
 >>> from ctabustracker import CTABusTracker
 >>> cbt = CTABusTracker('YOUR API KEY GOES HERE')
