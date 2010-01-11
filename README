@@ -1,0 +1,12 @@
+A python wrapper for the Chicago Transit Authority's Bustracker API.
+
+To install, simply run:
+
+  python setup.py install
+
+This software was developed by the News Applications Development Team at the
+Chicago Tribune.  To see more of our work, visit:
+
+  http://apps.chicagotribune.com/
+
+This software is licensed under the MIT license.  For details see COPYING.
